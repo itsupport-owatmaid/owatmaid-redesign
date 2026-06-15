@@ -1,0 +1,16 @@
+# raw source content (scraped from old site) — not part of the redesign deliverable
+หน้าแรก.txt
+งานจัดหาแม่บ้าน/
+ติดต่อเรา/
+บทความ/
+ผลงานของเรา/
+ลูกค้าของเรา/
+สินค้าของเรา/
+เกี่ยวกับเรา/
+pic/
+logo/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.zip
