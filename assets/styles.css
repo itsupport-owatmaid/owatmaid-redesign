@@ -83,7 +83,7 @@ ul{margin:0; padding:0; list-style:none}
 .header.scrolled{box-shadow:var(--shadow-sm)}
 .nav{display:flex; align-items:center; gap:1.5rem; height:74px}
 .brand{display:flex; align-items:center; gap:.6rem; margin-right:auto; flex-shrink:0}
-.brand img{height:34px; width:auto}
+.brand img{height:50px; width:auto}
 .brand .tag{font-size:.72rem; color:var(--ink-3); line-height:1.1; font-weight:500}
 .brand b{font-family:"Kanit",sans-serif}
 .nav-links{display:flex; align-items:center; gap:.35rem}
@@ -344,7 +344,7 @@ ul{margin:0; padding:0; list-style:none}
 /* ============ Footer ============ */
 .footer{background:oklch(0.17 0.012 50); color:oklch(0.82 0.01 50); padding:clamp(3rem,2rem+3vw,4.5rem) 0 2rem}
 .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1.1fr; gap:2.5rem}
-.foot-brand img{height:34px; filter:brightness(0) invert(1); margin-bottom:1rem}
+.foot-brand img{height:60px; filter:brightness(0) invert(1); margin-bottom:1rem}
 .foot-brand p{font-size:.9rem; color:oklch(0.72 0.01 50); max-width:34ch}
 .foot-social{display:flex; gap:.6rem; margin-top:1.3rem}
 .foot-social a{width:40px; height:40px; border-radius:10px; background:oklch(0.24 0.012 50); display:grid;
@@ -455,7 +455,7 @@ ul{margin:0; padding:0; list-style:none}
   padding:1.3rem; display:flex; flex-direction:column; box-shadow:var(--shadow-lg)}
 .drawer.open{transform:none}
 .drawer .dhead{display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem}
-.drawer .dhead img{height:30px}
+.drawer .dhead img{height:46px}
 .drawer .dclose{background:none; border:1.5px solid var(--line-2); border-radius:10px; width:42px; height:42px;
   cursor:pointer; display:grid; place-items:center}
 .drawer a{font-family:"Kanit"; font-weight:500; font-size:1.1rem; color:var(--ink); padding:.85rem .5rem;
@@ -546,7 +546,7 @@ ul{margin:0; padding:0; list-style:none}
 .cta-band::before{content:""; position:absolute; inset:0; background:radial-gradient(75% 95% at 50% 0%, oklch(0.668 0.19 44 / .26), transparent 62%)}
 .cta-band > *{position:relative}
 .cta-band h2{color:#fff; font-size:clamp(1.6rem,1.2rem+2vw,2.4rem)}
-.cta-band p{color:oklch(0.86 0.012 50); margin:1rem auto 1.8rem; max-width:48ch}
+.cta-band p{color:oklch(0.86 0.012 50); margin:1.25rem auto 2.6rem; max-width:48ch; line-height:1.7}
 .cta-band .btns{display:flex; gap:.9rem; justify-content:center; flex-wrap:wrap}
 
 @media (max-width:860px){
