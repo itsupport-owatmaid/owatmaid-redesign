@@ -6,11 +6,11 @@
   --ink: oklch(0.22 0.012 55);
   --ink-2: oklch(0.43 0.015 55);
   --ink-3: oklch(0.55 0.014 55);
-  --brand: oklch(0.638 0.208 34);         /* #ef4923 — โลโก้ / large / decorative */
-  --brand-press: oklch(0.625 0.207 35);   /* ปุ่ม — ส้มสดตรงแบรนด์ (#ef4923) */
-  --brand-deep: oklch(0.505 0.173 34);    /* link / brand text on light — ส้มเข้มอ่านง่าย */
-  --brand-tint: oklch(0.96 0.03 38);
-  --brand-tint-2: oklch(0.93 0.052 36);
+  --brand: oklch(0.668 0.19 44);          /* ส้มแท้ #EF630E — hero block / pill / decorative */
+  --brand-press: oklch(0.615 0.195 43);   /* ปุ่ม — ส้มสด #DE4F00 (white text ~4:1) */
+  --brand-deep: oklch(0.515 0.165 42);    /* link / eyebrow / accent — ส้มเข้ม #B03B00 อ่านง่าย */
+  --brand-tint: oklch(0.955 0.032 50);
+  --brand-tint-2: oklch(0.925 0.058 46);
   --steel: oklch(0.19 0.008 50);         /* near-black dark band */
   --steel-2: oklch(0.255 0.01 50);
   --steel-line: oklch(0.35 0.012 50);
@@ -61,13 +61,13 @@ ul{margin:0; padding:0; list-style:none}
 
 /* ============ Buttons ============ */
 .btn{display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
-  font-family:"Sarabun",sans-serif; font-weight:700; font-size:1rem; line-height:1;
+  font-family:"Sarabun",sans-serif; font-weight:700; font-size:1rem; line-height:1.15;
   padding:.95rem 1.5rem; border-radius:999px; border:2px solid transparent; cursor:pointer;
   transition:transform .18s var(--ease), box-shadow .25s var(--ease), background .2s, color .2s, border-color .2s;
   white-space:nowrap}
 .btn svg{width:1.15em; height:1.15em}
 .btn-primary{background:var(--brand-press); color:#fff; box-shadow:var(--shadow-sm)}
-.btn-primary:hover{background:oklch(0.55 0.19 34); transform:translateY(-2px); box-shadow:var(--shadow-md); text-decoration:none}
+.btn-primary:hover{background:oklch(0.555 0.185 42); transform:translateY(-2px); box-shadow:var(--shadow-md); text-decoration:none}
 .btn-ghost{background:#fff; color:var(--ink); border-color:var(--line-2)}
 .btn-ghost:hover{border-color:var(--brand); color:var(--brand-deep); transform:translateY(-2px); text-decoration:none}
 .btn-light{background:#fff; color:var(--brand-deep)}
@@ -107,7 +107,7 @@ ul{margin:0; padding:0; list-style:none}
 .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(1.5rem,1rem + 3vw,4rem); align-items:center;
   padding:clamp(2.5rem,2rem + 4vw,5rem) 0 clamp(2rem,1.5rem + 3vw,4rem)}
 .hero h1{font-size:clamp(2.1rem,1.5rem + 3.4vw,4rem); font-weight:700; letter-spacing:normal; line-height:1.32}
-.hero h1 .accent{color:var(--brand-deep)}
+.hero h1 .accent{color:var(--brand-press)}
 .hero .lede{font-size:clamp(1.08rem,1rem + 0.5vw,1.3rem); max-width:46ch}
 .hero-pill{display:inline-flex; align-items:center; gap:.6rem; background:#fff; border:1px solid var(--line);
   padding:.45rem .5rem .45rem .9rem; border-radius:999px; font-size:.9rem; font-weight:500; color:var(--ink-2);
@@ -180,7 +180,7 @@ ul{margin:0; padding:0; list-style:none}
 /* ============ Reliability / Safety (dark) ============ */
 .safety{background:var(--steel); color:#fff; position:relative; overflow:hidden}
 .safety::before{content:""; position:absolute; inset:0; opacity:.5;
-  background:radial-gradient(60% 50% at 85% 0%, oklch(0.638 0.208 34 / .25), transparent 60%)}
+  background:radial-gradient(60% 50% at 85% 0%, oklch(0.668 0.19 44 / .25), transparent 60%)}
 .safety .wrap{position:relative}
 .safety .eyebrow{color:oklch(0.8 0.1 45)}
 .safety .eyebrow::before{background:var(--brand)}
@@ -188,7 +188,7 @@ ul{margin:0; padding:0; list-style:none}
 .safety .lede{color:oklch(0.86 0.012 50)}
 .safety-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.1rem; margin-top:2.8rem}
 .scard{background:var(--steel-2); border:1px solid var(--steel-line); border-radius:var(--r); padding:1.6rem}
-.scard .ic{width:48px; height:48px; border-radius:12px; background:oklch(0.638 0.208 34 / .18); color:var(--brand);
+.scard .ic{width:48px; height:48px; border-radius:12px; background:oklch(0.668 0.19 44 / .18); color:var(--brand);
   display:grid; place-items:center; margin-bottom:1rem}
 .scard .ic svg{width:26px; height:26px}
 .scard h3{color:#fff; font-size:1.12rem; margin-bottom:.4rem}
@@ -283,7 +283,7 @@ ul{margin:0; padding:0; list-style:none}
 /* ============ Booking ============ */
 .booking{background:var(--steel); color:#fff; position:relative; overflow:hidden}
 .booking::before{content:""; position:absolute; right:-10%; top:-30%; width:480px; height:480px; border-radius:50%;
-  background:radial-gradient(circle, oklch(0.638 0.208 34 / .28), transparent 65%)}
+  background:radial-gradient(circle, oklch(0.668 0.19 44 / .28), transparent 65%)}
 .book-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(2rem,1rem + 4vw,4rem); align-items:start;
   position:relative}
 .booking h2{color:#fff}
@@ -383,7 +383,7 @@ ul{margin:0; padding:0; list-style:none}
 .cfab-btn::before{content:""; position:absolute; inset:0; border-radius:999px; box-shadow:0 0 0 0 var(--brand);
   animation:cfabPulse 2.6s var(--ease) infinite; pointer-events:none}
 .cfab-btn{position:relative; overflow:visible}
-@keyframes cfabPulse{0%{box-shadow:0 0 0 0 oklch(0.638 0.208 34 / .45)}70%{box-shadow:0 0 0 14px oklch(0.638 0.208 34 / 0)}100%{box-shadow:0 0 0 0 oklch(0.638 0.208 34 / 0)}}
+@keyframes cfabPulse{0%{box-shadow:0 0 0 0 oklch(0.668 0.19 44 / .45)}70%{box-shadow:0 0 0 14px oklch(0.668 0.19 44 / 0)}100%{box-shadow:0 0 0 0 oklch(0.668 0.19 44 / 0)}}
 .cfab-menu{display:grid; gap:.55rem; opacity:0; pointer-events:none; transform:translateY(12px) scale(.96);
   transform-origin:bottom right; transition:opacity .22s var(--ease-out), transform .22s var(--ease-out)}
 .cfab.open .cfab-menu{opacity:1; pointer-events:auto; transform:none}
@@ -543,7 +543,7 @@ ul{margin:0; padding:0; list-style:none}
 
 /* simple CTA band */
 .cta-band{background:var(--steel); color:#fff; border-radius:var(--r-lg); padding:clamp(2.5rem,2rem+3.5vw,4.25rem) clamp(1.5rem,1rem+3vw,3.5rem); text-align:center; position:relative; overflow:hidden}
-.cta-band::before{content:""; position:absolute; inset:0; background:radial-gradient(60% 80% at 80% 0%, oklch(0.638 0.208 34 / .22), transparent 60%)}
+.cta-band::before{content:""; position:absolute; inset:0; background:radial-gradient(75% 95% at 50% 0%, oklch(0.668 0.19 44 / .26), transparent 62%)}
 .cta-band > *{position:relative}
 .cta-band h2{color:#fff; font-size:clamp(1.6rem,1.2rem+2vw,2.4rem)}
 .cta-band p{color:oklch(0.86 0.012 50); margin:1rem auto 1.8rem; max-width:48ch}
